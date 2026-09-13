@@ -3,6 +3,9 @@
    tokens, components, utilities, states, and print support.
 */
 
+/* Base / Foundation
+   Broad element styles that apply across the whole page. */
+
 body {
   margin: 0;
   background: white;
@@ -16,6 +19,69 @@ header {
   background: #8c1d40;
   color: white;
   padding: 24px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+form {
+  border: 1px solid #dddddd;
+  padding: 24px;
+  background: #f7f7f7;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #222222;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #ffc627;
+}
+
+footer {
+  background: #191919;
+  color: white;
+  padding: 24px;
+  margin-top: 48px;
+}
+
+footer a {
+  color: #ffc627;
 }
 
 .site-header {
@@ -50,12 +116,6 @@ header {
 .site-header nav ul li a[aria-current="page"] {
   background: #ffc627;
   color: #191919;
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 32px 20px;
 }
 
 .hero {
@@ -176,52 +236,6 @@ button:hover {
   margin: 32px 0;
 }
 
-form {
-  border: 1px solid #dddddd;
-  padding: 24px;
-  background: #f7f7f7;
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #222222;
-}
-
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-
-select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 3px solid #ffc627;
-}
-
 .section {
   margin-bottom: 48px;
 }
@@ -246,17 +260,6 @@ textarea:focus {
 
 .resource h3 {
   color: #8c1d40;
-}
-
-footer {
-  background: #191919;
-  color: white;
-  padding: 24px;
-  margin-top: 48px;
-}
-
-footer a {
-  color: #ffc627;
 }
 
 .text-center {
