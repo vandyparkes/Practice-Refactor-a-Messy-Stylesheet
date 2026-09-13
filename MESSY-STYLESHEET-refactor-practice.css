@@ -3,30 +3,23 @@
    tokens, components, utilities, states, and print support.
 */
 
-:root {
-  --color-maroon: #8c1d40;
-  --color-gold: #ffc627;
-  --color-text: #222222;
-  --color-dark: #191919;
-  --color-white: white;
-  --color-border: #dddddd;
-}
-
 /* Base / Foundation
-   Broad element styles that apply across the whole page. */
+   Broad, page-wide element styles live here so they are easy to find
+   before more specific class-based rules.
+*/
 
 body {
   margin: 0;
-  background: var(--color-white);
-  color: var(--color-text);
+  background: white;
+  color: #222222;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 header {
-  background: var(--color-maroon);
-  color: var(--color-white);
+  background: #8c1d40;
+  color: white;
   padding: 24px;
 }
 
@@ -37,7 +30,7 @@ main {
 }
 
 form {
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   padding: 24px;
   background: #f7f7f7;
 }
@@ -46,13 +39,13 @@ label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: var(--color-text);
+  color: #222222;
 }
 
 input {
   width: 100%;
   padding: 12px;
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -61,7 +54,7 @@ input {
 select {
   width: 100%;
   padding: 12px;
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -70,7 +63,7 @@ select {
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -79,27 +72,36 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid var(--color-gold);
+  outline: 3px solid #ffc627;
+}
+
+button {
+  background: #8c1d40;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 4px;
+  border: 0;
+  font-weight: bold;
 }
 
 footer {
-  background: var(--color-dark);
-  color: var(--color-white);
+  background: #191919;
+  color: white;
   padding: 24px;
   margin-top: 48px;
 }
 
 footer a {
-  color: var(--color-gold);
+  color: #ffc627;
 }
 
 .site-header {
-  background: var(--color-maroon);
+  background: #8c1d40;
   padding: 24px;
 }
 
 .site-header a {
-  color: var(--color-white);
+  color: white;
   text-decoration: none;
 }
 
@@ -112,30 +114,30 @@ footer a {
 }
 
 .site-header nav ul li a {
-  color: var(--color-white);
+  color: white;
   padding: 8px 12px;
   border-radius: 4px;
 }
 
 .site-header nav ul li a:hover {
-  background: var(--color-gold);
-  color: var(--color-dark);
+  background: #ffc627;
+  color: #191919;
 }
 
 .site-header nav ul li a[aria-current="page"] {
-  background: var(--color-gold);
-  color: var(--color-dark);
+  background: #ffc627;
+  color: #191919;
 }
 
 .hero {
   background: #f7f7f7;
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   padding: 32px;
   margin-bottom: 32px;
 }
 
 .hero h1 {
-  color: var(--color-maroon);
+  color: #8c1d40;
   font-size: 42px;
   line-height: 1.1;
   margin: 0 0 16px;
@@ -143,13 +145,13 @@ footer a {
 
 .hero p {
   font-size: 18px;
-  color: var(--color-text);
+  color: #222222;
 }
 
 .button {
   display: inline-block;
-  background: var(--color-maroon);
-  color: var(--color-white);
+  background: #8c1d40;
+  color: white;
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
@@ -158,28 +160,19 @@ footer a {
 
 .btn {
   display: inline-block;
-  background: var(--color-maroon);
-  color: var(--color-white);
+  background: #8c1d40;
+  color: white;
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
 }
 
-button {
-  background: var(--color-maroon);
-  color: var(--color-white);
-  padding: 12px 18px;
-  border-radius: 4px;
-  border: 0;
-  font-weight: bold;
-}
-
 .button:hover,
 .btn:hover,
 button:hover {
-  background: var(--color-gold);
-  color: var(--color-dark);
+  background: #ffc627;
+  color: #191919;
 }
 
 .card-grid {
@@ -190,22 +183,22 @@ button:hover {
 }
 
 .card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
+  background: white;
+  border: 1px solid #dddddd;
   border-radius: 8px;
   padding: 20px;
 }
 
 .event-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
+  background: white;
+  border: 1px solid #dddddd;
   border-radius: 8px;
   padding: 20px;
 }
 
 .speaker-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
+  background: white;
+  border: 1px solid #dddddd;
   border-radius: 8px;
   padding: 20px;
 }
@@ -213,34 +206,34 @@ button:hover {
 .card h3,
 .event-card h3,
 .speaker-card h3 {
-  color: var(--color-maroon);
+  color: #8c1d40;
   margin-top: 0;
 }
 
 .card a,
 .event-card a,
 .speaker-card a {
-  color: var(--color-maroon);
+  color: #8c1d40;
   font-weight: bold;
 }
 
 .callout {
   background: #fff8df;
-  border-left: 6px solid var(--color-gold);
+  border-left: 6px solid #ffc627;
   padding: 20px;
   margin: 32px 0;
 }
 
 .note {
   background: #fff8df;
-  border-left: 6px solid var(--color-gold);
+  border-left: 6px solid #ffc627;
   padding: 20px;
   margin: 32px 0;
 }
 
 .warning {
   background: #fff8df;
-  border-left: 6px solid var(--color-gold);
+  border-left: 6px solid #ffc627;
   padding: 20px;
   margin: 32px 0;
 }
@@ -250,7 +243,7 @@ button:hover {
 }
 
 .section h2 {
-  color: var(--color-maroon);
+  color: #8c1d40;
   font-size: 32px;
   margin-bottom: 12px;
 }
@@ -262,13 +255,13 @@ button:hover {
 }
 
 .resource {
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   padding: 20px;
   border-radius: 8px;
 }
 
 .resource h3 {
-  color: var(--color-maroon);
+  color: #8c1d40;
 }
 
 .text-center {
