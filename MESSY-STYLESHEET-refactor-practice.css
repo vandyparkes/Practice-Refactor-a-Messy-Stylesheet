@@ -114,13 +114,13 @@ footer a {
   gap: 12px;
 }
 
-.site-header nav ul li a {
+.site-header nav a {
   color: var(--color-on-dark);
   padding: 8px 12px;
   border-radius: 4px;
 }
 
-.site-header nav ul li a:hover {
+.site-header nav a:hover {
   background: var(--color-accent);
   color: var(--color-dark);
 }
