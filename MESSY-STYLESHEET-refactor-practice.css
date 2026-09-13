@@ -27,10 +27,14 @@ body {
   line-height: 1.5;
 }
 
-header {
+header,
+.site-header {
   background: var(--color-brand);
-  color: var(--color-on-dark);
   padding: 24px;
+}
+
+header {
+  color: var(--color-on-dark);
 }
 
 main {
@@ -52,24 +56,8 @@ label {
   color: var(--color-text);
 }
 
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-
-select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-
+input,
+select,
 textarea {
   width: 100%;
   padding: 12px;
@@ -96,11 +84,6 @@ footer a {
   color: var(--color-accent);
 }
 
-.site-header {
-  background: var(--color-brand);
-  padding: 24px;
-}
-
 .site-header a {
   color: var(--color-on-dark);
   text-decoration: none;
@@ -115,16 +98,11 @@ footer a {
 }
 
 .site-header nav a {
-  color: var(--color-on-dark);
   padding: 8px 12px;
   border-radius: 4px;
 }
 
-.site-header nav a:hover {
-  background: var(--color-accent);
-  color: var(--color-dark);
-}
-
+.site-header nav a:hover,
 .site-header nav ul li a[aria-current="page"] {
   background: var(--color-accent);
   color: var(--color-dark);
@@ -187,17 +165,29 @@ button:hover {
 
 .card,
 .event-card,
-.speaker-card {
-  background: var(--color-background);
+.speaker-card,
+.resource {
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
 }
 
+.card,
+.event-card,
+.speaker-card {
+  background: var(--color-background);
+}
+
+.card h3,
+.event-card h3,
+.speaker-card h3,
+.resource h3 {
+  color: var(--color-brand);
+}
+
 .card h3,
 .event-card h3,
 .speaker-card h3 {
-  color: var(--color-brand);
   margin-top: 0;
 }
 
@@ -233,20 +223,9 @@ button:hover {
   gap: 20px;
 }
 
-.resource {
-  border: 1px solid var(--color-border);
-  padding: 20px;
-  border-radius: 8px;
-}
+/* Utilities */
 
-.resource h3 {
-  color: var(--color-brand);
-}
-
-.text-center {
-  text-align: center;
-}
-
+.text-center,
 .center {
   text-align: center;
 }
@@ -256,10 +235,7 @@ button:hover {
 }
 
 @media (max-width: 700px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .card-grid,
   .resources {
     grid-template-columns: 1fr;
   }
