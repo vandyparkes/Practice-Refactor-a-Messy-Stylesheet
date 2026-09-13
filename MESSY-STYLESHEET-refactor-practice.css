@@ -3,21 +3,30 @@
    tokens, components, utilities, states, and print support.
 */
 
+:root {
+  --color-maroon: #8c1d40;
+  --color-gold: #ffc627;
+  --color-text: #222222;
+  --color-dark: #191919;
+  --color-white: white;
+  --color-border: #dddddd;
+}
+
 /* Base / Foundation
    Broad element styles that apply across the whole page. */
 
 body {
   margin: 0;
-  background: white;
-  color: #222222;
+  background: var(--color-white);
+  color: var(--color-text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 header {
-  background: #8c1d40;
-  color: white;
+  background: var(--color-maroon);
+  color: var(--color-white);
   padding: 24px;
 }
 
@@ -28,7 +37,7 @@ main {
 }
 
 form {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-border);
   padding: 24px;
   background: #f7f7f7;
 }
@@ -37,13 +46,13 @@ label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: #222222;
+  color: var(--color-text);
 }
 
 input {
   width: 100%;
   padding: 12px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -52,7 +61,7 @@ input {
 select {
   width: 100%;
   padding: 12px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -61,7 +70,7 @@ select {
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -70,27 +79,27 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid #ffc627;
+  outline: 3px solid var(--color-gold);
 }
 
 footer {
-  background: #191919;
-  color: white;
+  background: var(--color-dark);
+  color: var(--color-white);
   padding: 24px;
   margin-top: 48px;
 }
 
 footer a {
-  color: #ffc627;
+  color: var(--color-gold);
 }
 
 .site-header {
-  background: #8c1d40;
+  background: var(--color-maroon);
   padding: 24px;
 }
 
 .site-header a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -103,30 +112,30 @@ footer a {
 }
 
 .site-header nav ul li a {
-  color: white;
+  color: var(--color-white);
   padding: 8px 12px;
   border-radius: 4px;
 }
 
 .site-header nav ul li a:hover {
-  background: #ffc627;
-  color: #191919;
+  background: var(--color-gold);
+  color: var(--color-dark);
 }
 
 .site-header nav ul li a[aria-current="page"] {
-  background: #ffc627;
-  color: #191919;
+  background: var(--color-gold);
+  color: var(--color-dark);
 }
 
 .hero {
   background: #f7f7f7;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-border);
   padding: 32px;
   margin-bottom: 32px;
 }
 
 .hero h1 {
-  color: #8c1d40;
+  color: var(--color-maroon);
   font-size: 42px;
   line-height: 1.1;
   margin: 0 0 16px;
@@ -134,13 +143,13 @@ footer a {
 
 .hero p {
   font-size: 18px;
-  color: #222222;
+  color: var(--color-text);
 }
 
 .button {
   display: inline-block;
-  background: #8c1d40;
-  color: white;
+  background: var(--color-maroon);
+  color: var(--color-white);
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
@@ -149,8 +158,8 @@ footer a {
 
 .btn {
   display: inline-block;
-  background: #8c1d40;
-  color: white;
+  background: var(--color-maroon);
+  color: var(--color-white);
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
@@ -158,8 +167,8 @@ footer a {
 }
 
 button {
-  background: #8c1d40;
-  color: white;
+  background: var(--color-maroon);
+  color: var(--color-white);
   padding: 12px 18px;
   border-radius: 4px;
   border: 0;
@@ -169,8 +178,8 @@ button {
 .button:hover,
 .btn:hover,
 button:hover {
-  background: #ffc627;
-  color: #191919;
+  background: var(--color-gold);
+  color: var(--color-dark);
 }
 
 .card-grid {
@@ -181,22 +190,22 @@ button:hover {
 }
 
 .card {
-  background: white;
-  border: 1px solid #dddddd;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
 }
 
 .event-card {
-  background: white;
-  border: 1px solid #dddddd;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
 }
 
 .speaker-card {
-  background: white;
-  border: 1px solid #dddddd;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
 }
@@ -204,34 +213,34 @@ button:hover {
 .card h3,
 .event-card h3,
 .speaker-card h3 {
-  color: #8c1d40;
+  color: var(--color-maroon);
   margin-top: 0;
 }
 
 .card a,
 .event-card a,
 .speaker-card a {
-  color: #8c1d40;
+  color: var(--color-maroon);
   font-weight: bold;
 }
 
 .callout {
   background: #fff8df;
-  border-left: 6px solid #ffc627;
+  border-left: 6px solid var(--color-gold);
   padding: 20px;
   margin: 32px 0;
 }
 
 .note {
   background: #fff8df;
-  border-left: 6px solid #ffc627;
+  border-left: 6px solid var(--color-gold);
   padding: 20px;
   margin: 32px 0;
 }
 
 .warning {
   background: #fff8df;
-  border-left: 6px solid #ffc627;
+  border-left: 6px solid var(--color-gold);
   padding: 20px;
   margin: 32px 0;
 }
@@ -241,7 +250,7 @@ button:hover {
 }
 
 .section h2 {
-  color: #8c1d40;
+  color: var(--color-maroon);
   font-size: 32px;
   margin-bottom: 12px;
 }
@@ -253,13 +262,13 @@ button:hover {
 }
 
 .resource {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-border);
   padding: 20px;
   border-radius: 8px;
 }
 
 .resource h3 {
-  color: #8c1d40;
+  color: var(--color-maroon);
 }
 
 .text-center {
