@@ -12,8 +12,9 @@
   --color-accent: #ffc627;
   --color-text: #222222;
   --color-border: #dddddd;
-  --color-white: white;
-  --color-ink: #191919;
+  --color-background: white;
+  --color-on-dark: white;
+  --color-dark: #191919;
   --color-surface: #f7f7f7;
 }
 
@@ -24,7 +25,7 @@
 
 body {
   margin: 0;
-  background: var(--color-white);
+  background: var(--color-background);
   color: var(--color-text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -33,7 +34,7 @@ body {
 
 header {
   background: var(--color-brand);
-  color: var(--color-white);
+  color: var(--color-on-dark);
   padding: 24px;
 }
 
@@ -91,7 +92,7 @@ textarea:focus {
 
 button {
   background: var(--color-brand);
-  color: var(--color-white);
+  color: var(--color-on-dark);
   padding: 12px 18px;
   border-radius: 4px;
   border: 0;
@@ -99,8 +100,8 @@ button {
 }
 
 footer {
-  background: var(--color-ink);
-  color: var(--color-white);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
   padding: 24px;
   margin-top: 48px;
 }
@@ -115,7 +116,7 @@ footer a {
 }
 
 .site-header a {
-  color: var(--color-white);
+  color: var(--color-on-dark);
   text-decoration: none;
 }
 
@@ -128,19 +129,19 @@ footer a {
 }
 
 .site-header nav ul li a {
-  color: var(--color-white);
+  color: var(--color-on-dark);
   padding: 8px 12px;
   border-radius: 4px;
 }
 
 .site-header nav ul li a:hover {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-dark);
 }
 
 .site-header nav ul li a[aria-current="page"] {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-dark);
 }
 
 .hero {
@@ -165,7 +166,7 @@ footer a {
 .button {
   display: inline-block;
   background: var(--color-brand);
-  color: var(--color-white);
+  color: var(--color-on-dark);
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
@@ -175,7 +176,7 @@ footer a {
 .btn {
   display: inline-block;
   background: var(--color-brand);
-  color: var(--color-white);
+  color: var(--color-on-dark);
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
@@ -186,7 +187,7 @@ footer a {
 .btn:hover,
 button:hover {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-dark);
 }
 
 .card-grid {
@@ -197,21 +198,21 @@ button:hover {
 }
 
 .card {
-  background: var(--color-white);
+  background: var(--color-background);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
 }
 
 .event-card {
-  background: var(--color-white);
+  background: var(--color-background);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
 }
 
 .speaker-card {
-  background: var(--color-white);
+  background: var(--color-background);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 20px;
