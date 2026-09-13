@@ -248,3 +248,9 @@ button:hover {
     flex-direction: column;
   }
 }
+
+/*
+The most useful change was grouping the repeated pieces. Buttons, cards, and callouts stopped being copy-paste blocks, and the ASU maroon and gold became tokens you can update in one place.
+
+I checked it at 1280px and 390px. Layout, type size, and color still followed the original direction at both widths. I did not have the course HTML file, so this was a stand-in page using the same class names.
+*/
