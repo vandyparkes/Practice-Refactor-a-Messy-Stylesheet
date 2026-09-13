@@ -3,9 +3,7 @@
    tokens, components, utilities, states, and print support.
 */
 
-/* Tokens
-   Repeated values live here so the visual direction is defined once.
-*/
+/* Tokens */
 
 :root {
   --color-brand: #8c1d40;
@@ -18,10 +16,7 @@
   --color-surface: #f7f7f7;
 }
 
-/* Base / Foundation
-   Broad, page-wide element styles live here so they are easy to find
-   before more specific class-based rules.
-*/
+/* Base */
 
 body {
   margin: 0;
@@ -90,15 +85,6 @@ textarea:focus {
   outline: 3px solid var(--color-accent);
 }
 
-button {
-  background: var(--color-brand);
-  color: var(--color-on-dark);
-  padding: 12px 18px;
-  border-radius: 4px;
-  border: 0;
-  font-weight: bold;
-}
-
 footer {
   background: var(--color-dark);
   color: var(--color-on-dark);
@@ -163,24 +149,26 @@ footer a {
   color: var(--color-text);
 }
 
-.button {
-  display: inline-block;
+/* Components */
+
+.button,
+.btn,
+button {
   background: var(--color-brand);
   color: var(--color-on-dark);
   padding: 12px 18px;
   border-radius: 4px;
-  text-decoration: none;
   font-weight: bold;
 }
 
+.button,
 .btn {
   display: inline-block;
-  background: var(--color-brand);
-  color: var(--color-on-dark);
-  padding: 12px 18px;
-  border-radius: 4px;
   text-decoration: none;
-  font-weight: bold;
+}
+
+button {
+  border: 0;
 }
 
 .button:hover,
@@ -197,20 +185,8 @@ button:hover {
   margin: 32px 0;
 }
 
-.card {
-  background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 20px;
-}
-
-.event-card {
-  background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 20px;
-}
-
+.card,
+.event-card,
 .speaker-card {
   background: var(--color-background);
   border: 1px solid var(--color-border);
@@ -232,20 +208,8 @@ button:hover {
   font-weight: bold;
 }
 
-.callout {
-  background: #fff8df;
-  border-left: 6px solid var(--color-accent);
-  padding: 20px;
-  margin: 32px 0;
-}
-
-.note {
-  background: #fff8df;
-  border-left: 6px solid var(--color-accent);
-  padding: 20px;
-  margin: 32px 0;
-}
-
+.callout,
+.note,
 .warning {
   background: #fff8df;
   border-left: 6px solid var(--color-accent);
